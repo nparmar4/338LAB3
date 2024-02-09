@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+import sys 
+sys.setrecursionlimit(20000)
 
 def bubbleSort(a):
     numComparisons = 0

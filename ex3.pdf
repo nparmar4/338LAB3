@@ -21,6 +21,3 @@ Thus, the total numner of comparisons in a bubble sort is given by:
         Total Number of Comparisons = (n*(n-1))/2 = (n^2-n)/2
     
 
-4. Separately plot the results of #comparisons and #swaps by input size,
-together with appropriate interpolating functions. Discuss your results:
-do they match your complexity analysis? [0.2 pts]
