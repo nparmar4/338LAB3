@@ -1,0 +1,23 @@
+1. Derive the formulas for (i) number of comparisons, and (ii) average-case
+number of swaps for bubble sort [0.4 pts]
+
+(i) We will demonstrate through an example:
+
+Consider an array of length k.
+
+In the first pass, the largest element in the array will be bubbled up to the end of the array.
+In order to do this, we need k-1 comparisons since the last element is not compared with any of the 
+other elements.
+
+Then, in the second pass, the second largest element will be bubbled-up to the second last position.
+Consequently, for this to work, we will need k-2 comparisons since now, 
+the last two elements won't need to be compared with any other element. 
+(because they're already in their correct positons.)
+
+This patterns will continue with each pass until the end, where the smallest element will already be in 
+its correct index.
+
+Thus, the total numner of comparisons in a bubble sort is given by:
+        Total Number of Comparisons = (n*(n-1))/2 = (n^2-n)/2
+    
+
