@@ -4,10 +4,9 @@ pivot element. After the creation of the two sub arrays, the arrays are then sor
 The worst-case scenario for the quicksort method occurs when the pivot element is chosen as the smallest or largest
 element in the array. In this case, the algorithm will make n-1 recursive calls due to the unbalanced partitions, and each 
 sub-array will be of size n-1. Consequently there is a total of n-1 levels of recursion, and each sub-array will be of
-size n-1. Thus, this leads to a time complexity of O(n^2)
+size n-1. Thus, this leads to a worst-case complexity of O(n^2)
 
-We can also represent it in this way:
-Let X(k) be the worst-case time complexity of quicksort for an array of size k.
+Let X(k) be the worst-case time complexity of a quicksort algorithm for an array of size k.
 
 Then,
 
@@ -15,6 +14,20 @@ X(k) = X(k-1)+X(0)+O(k) where X(k-1) is the time taken to divide the array into 
                               X(0) is the time taken to divide the array with zero elements and,
                               O(k) is the time taken for the dividing/partioning step
 
-By solving this, it is determined that the quicksort time complexity is O(k^2)
+By solving this, it is determined that the quicksort time complexity is O(k^2).
+
+2.  Array of 16 elements:
+    [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+    (i) Choose an element within the array to be your pivot.
+    We chose element 0 as our pivot element
+
+    (ii) Divide the array into 2 sub-arrays.
+     [0] and [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+    (iii) Once you have 2 sub-arrays, recursively sort them.
+     
+
+
 
 

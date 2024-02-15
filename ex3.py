@@ -70,4 +70,4 @@ plt.tight_layout()
 plt.show()
 
 
-#this code was generated with AI but was significantly modified to be accurate
+#this code was generated with AI but was significantly modified to display accurate output and function
