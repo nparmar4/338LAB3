@@ -33,7 +33,7 @@ def measure_performance(search_algorithm, array_size, num_trials=100):
     return total_time / num_trials
 
 # Measure performance for different array sizes
-array_sizes = [1000, 2000, 5000, 10000]
+array_sizes = [10,20,50,100,200,500,1000, 2000, 5000, 10000]
 linear_search_times = []
 binary_search_times = []
 
