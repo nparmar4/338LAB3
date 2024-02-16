@@ -61,3 +61,5 @@ plt.title('Performance of Linear vs Binary Search')
 plt.legend()
 plt.savefig('performance_plot.png')
 plt.show()
+
+#this code was generated using chatGPT but was slightly modified to show accurate results
