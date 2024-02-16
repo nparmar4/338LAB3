@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import random
 import time
 
@@ -44,7 +43,16 @@ for size in array_sizes:
     linear_search_times.append(linear_search_time)
     binary_search_times.append(binary_search_time)
 
+# Print the results
+for i, size in enumerate(array_sizes):
+    print(f'Array Size: {size}')
+    print(f'  Linear Search: {linear_search_times[i]:.6f} seconds')
+    print(f'  Binary Search: {binary_search_times[i]:.6f} seconds')
+    print()
+
 # Plot the results
+import matplotlib.pyplot as plt
+
 plt.plot(array_sizes, linear_search_times, label='Linear Search')
 plt.plot(array_sizes, binary_search_times, label='Binary Search')
 plt.xlabel('Array Size')
@@ -53,5 +61,3 @@ plt.title('Performance of Linear vs Binary Search')
 plt.legend()
 plt.savefig('performance_plot.png')
 plt.show()
-
-#this code was generated using chatGPT but was also modified to provide accurate output
